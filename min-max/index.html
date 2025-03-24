@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Form Validation</h1>
+    <div>
+      The <code>min</code> and <code>max</code> attributes define the value that
+      an input must adhere to in order to be considered valid.
+    </div>
+
+    <br />
+
+    <div id="app">
+      <p>Try submitting this form with input of varying values.</p>
+      <form id="myForm">
+        <input type="time" min="09:00:00" max="17:00:00" required />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+  
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Event Bubbling</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <h1>Event Bubbling</h1>
+    <div>
+      Click the button below, and inspect the console output. Then, try clicking
+      elsewhere and see what the results are.
+
+      <br /><br />
+
+      // the event happens in the button but all events are listed up to the
+      document through all the parents up to the top // bubbling -- "clicked the
+      button! clicked the body! clicked the HTML element! clicked the document!"
+      <button id="myBtn" type="button">Click me!</button>
+    </div>
+
+    <script src="./index.js" defer></script>
+  </body>
+</html>

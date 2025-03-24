@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <h1>Form Validation</h1>
+    <div>
+      The <code>pattern</code> attribute provides powerful tools for matching an
+      input to a desired format using regular expressions.
+    </div>
+
+    <br />
+
+    <div id="app">
+      <p>Try submitting this form with input of varying values.</p>
+      <form id="myForm">
+        <input
+          type="text"
+          pattern="^[a-zA-Z]*$"
+          title="One word with no numbers or special characters."
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
+
+<!-- pattern="^[a-zA-Z]*$"
+ A to Z - uppercase or lowercase with no numbers or special characters -->
+ <!-- This is considered a regular expression and you are able to use it in other languages too -->
+  <!-- teacher's advice: These patterns are IMPOSSIBLE to memorize (or really really hard) do not spend a lot of brain power trying to memorize regex patterns. Want to include or exclude something? Just google it -->
